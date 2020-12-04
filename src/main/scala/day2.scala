@@ -3,7 +3,7 @@ import scala.io.Source
 import scala.collection.mutable.ArrayBuffer
 
 object day2 {
-  def main(args: Array[String]): Unit = {
+  /*def main(args: Array[String]): Unit = {
     val lines = Source.fromResource("d2.txt").getLines().toList
     //decided to time my two versions
     //didnt bother finishing the recursive p2, it didn't seem that fun
@@ -20,7 +20,7 @@ object day2 {
     //so the tail-recursive version is substantially faster even on smallish input sets
     //i thought about parallelizing it to be cool but since both functions can just partition the input set easily and reduce
     //it's not actually that interesting
-  }
+  }*/
 
   //naiive solution, not even that slow all things considering
   //both parts split the input in the same way
