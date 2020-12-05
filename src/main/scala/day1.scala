@@ -2,7 +2,6 @@ import scala.annotation.tailrec
 import scala.io.Source
 
 object day1 {
-  /**
   def main(args: Array[String]): Unit = {
     val lines = Source.fromResource("d1p1.txt").getLines().toList
     println(solveDay1p1(lines.map(_.toInt)))
@@ -10,7 +9,6 @@ object day1 {
     println(solveDay1p1ButMoreFun(lines.map(_.toInt)))
     println(solveDay1p2ButMoreFun(lines.map(_.toInt)))
   }
-  **/
 
   //desugars to double-nested foreach, pretty poopy
   def solveDay1p1(input: List[Int]): Int =
