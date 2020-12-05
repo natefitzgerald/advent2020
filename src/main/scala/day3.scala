@@ -2,12 +2,14 @@ import scala.annotation.tailrec
 import scala.io.Source
 
 object day3 {
+  /**
   def main(args: Array[String]): Unit = {
     val lines = Source.fromResource("d3.txt").getLines().toList
     println(d3p1(lines))
     val givenSlopes = List((1, 1), (3, 1), (5, 1), (7, 1), (1, 2))
     println(d3p2(lines, givenSlopes))
   }
+  **/
 
   def d3p1(input: List[String]) =
     singleMove(0, 0, Grid(input.mkString(""), input.head.length, input.length, 3, 1))
