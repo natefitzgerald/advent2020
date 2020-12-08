@@ -15,7 +15,9 @@ object day8 {
 
   @tailrec
   def execute(input: List[String], ptr: Int, acc: Long, executed: ArrayBuffer[Boolean]): (Long, Boolean) = {
+    //true if we concluded by executing the last instruction
     if(ptr == input.size - 1) (acc, true)
+    //false if we end with a loop
     else if (executed(ptr)) (acc, false)
     else {
       executed(ptr) = true
